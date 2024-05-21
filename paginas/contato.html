@@ -9,27 +9,30 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Projeto Orientado</h1>
     <header>
-        <h1>Projeto Orientado</h1>
-        <a href="index.html">Home</a> | <a href="samuel.html">Samuel Peres</a> | <a href="tla.html">TLA </a>| <a href="table.html">Tabela de Curiosidades</a> | <a href="sites.html">Sites Favoritos</a> | <a href="contato.html">Contato</a>
-        <h2>Formulario de contato</h2>
+        <a class="item-cab" href="index.html">Home</a>  <a class="item-cab" href="samuel.html">Samuel Peres</a>  <a class="item-cab" href="tla.html">TLA </a> <a class="item-cab" href="table.html">Tabela de Curiosidades</a>  <a class="item-cab" href="sites.html">Sites Favoritos</a>  <a class="item-cab" href="contato.html">Contato</a>
     </header>
+        <h2>Formulario de contato</h2>
+    
+    <div class="div-form">
     <form method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe-v2.php">
 
         <label for="name">Nome</label>
-        <input type="text" name="name"> 
+        <input type="text" id="name" name="name"> 
 
         <label for="tel">Telefone</label>
-        <input type="tel" name="tel"> 
+        <input type="tel" id="tel" name="tel"> 
 
         <label for="email">E-mail</label>
-        <input type="email" name="email"> 
+        <input type="email" id="email" name="email"> 
 
         <textarea name="msg"  cols="30" rows="10">
 
         </textarea>
         <button type="submit"> Enviar </button>
     </form>
+</div>
 
     
 

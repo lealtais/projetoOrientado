@@ -3,24 +3,39 @@
     src: url('consolas.ttf') format('truetype');
   }
 
+/*propriedades novas utilizadas:
+
+  *{
+
+  }
+  transition: all linear 0.5s | permite que propriedades sejam mudadas em um mesmo elemento de forma suave
+  display: flex | permite que outros elementos se acomodem dentro de um elemento de acordo com o espaço disponivel
+  flex-direction: column | diz para o elemento que todos os items dentro dele devem estar em alinhados em "column" (coluna)
+  transform: rotate() | diz para um elemento passar pela função de rotação quando uma ação ocorrer (como um hover), os parentes determinam os graus da rotação
+  cursor: pointer | diz pro seu mouse o tipo de cursor que ira aparecer quando você passar por cima (der hover) em um elemento
+  box shadow: adciona sombras aos elementos
+
+*/
+*{
+    text-align: center;
+}
 body{
     transition: all linear 0.5s;
-    
     background-color: #fffbfb;
     font-family: 'Consolas',monospace;
-    font-size: 20px;
+    font-size: 30px;
     margin: 0;
-    color: #f5f5dc;
+    color: #000000;
 }
 
 header{
-    background: #0b005c;
+    background: #6115a8;
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 5px;
-    text-align: center;
+    padding: 5px;
 }
-
+.item-cab{
+    margin: 10px;
+}
 img{
 
     border-radius: 50px;
@@ -30,16 +45,17 @@ img{
 
 p{
     color: black;
-    text-align: center;
 }
 
 a{
     text-decoration: none;
-    color: #f5f5dc;
+    color: #c7962d;
+
     
 }
 a:hover{
     text-decoration: underline;
+
     
 }
 
@@ -48,13 +64,10 @@ table{
 }
 
 h1{
-    margin: 0;
-    border-bottom: solid 2px;
-    text-align: center;
+    margin: 20px;
 }
 h2{
 
-    text-align: center;
     color: black;
 
 }
@@ -67,7 +80,6 @@ p{
 table{
     border-collapse: collapse;
     width: 100%;
-    text-align: center;
 }
 th{
     background-color:  #0b005c;
@@ -91,43 +103,57 @@ input,label,textarea,button{
     font-size: 20px;
 }
 .painel{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.painel-fotos,.painel-info{
+.painel-fotos,.painel-info,.div-form{
     display: flex;
 
 }
 
-.foto-membro{
-    text-align: center;
-    margin-left: 20%;
-   }
+.painel-info,.div-form{
+    align-items: center;
+    flex-direction: column;
+}
 
-#retratos{
+input,textarea,button{
+    border-radius: 20px;
+}
+button:hover{
+    cursor:pointer;
+    background-color: #6115a8;
+    color: #c7962d;
+}
+.retratos{
     box-shadow: 5px 5px 10px black;
-    /*Box shadow: adciona sombras aos elementos*/
-
+    
+    margin: 20px;
     transition: all linear 0.2s;
 
 }
 
-#retratos:hover{
+.retratos:hover{
     transition: all linear 0.2s;
     width: 350px;
     height: 350px;
 
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
+li{
+    list-style-type: none;   
+}
+.link-icon{
 
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+
+}
   .leaf-icon {
   
-    margin-right: 8px; /* Espaço entre a imagem e o texto */
+    margin-right: 8px; 
     transition: transform 0.3s ease-in-out;
   }
   
