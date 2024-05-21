@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Consolas';
+    src: url('consolas.ttf') format('truetype');
+  }
+
+body{
+    transition: all linear 0.5s;
+    
+    background-color: #fffbfb;
+    font-family: 'Consolas',monospace;
+    font-size: 20px;
+    margin: 0;
+    color: #f5f5dc;
+}
+
+header{
+    background: #0b005c;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+img{
+
+    border-radius: 50px;
+    width: 300px;
+    height: 300px;
+}
+
+p{
+    color: black;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #f5f5dc;
+    
+}
+a:hover{
+    text-decoration: underline;
+    
+}
+
+table{
+    color: black;
+}
+
+h1{
+    margin: 0;
+    border-bottom: solid 2px;
+    text-align: center;
+}
+h2{
+
+    text-align: center;
+    color: black;
+
+}
+
+p{
+    margin-left: 50px;
+    width: 50%;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+th{
+    background-color:  #0b005c;
+    color: rgb(255, 254, 254);
+}
+td{
+    border:solid  #0b005c;
+}
+td:hover{
+    cursor:pointer;
+    background-color:  #0b005c;
+    color: rgb(243, 238, 238);
+}
+form{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+input,label,textarea,button{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.painel{
+    text-align: center;
+}
+
+.painel-fotos,.painel-info{
+    display: flex;
+
+}
+
+.foto-membro{
+    text-align: center;
+    margin-left: 20%;
+   }
+
+#retratos{
+    box-shadow: 5px 5px 10px black;
+    /*Box shadow: adciona sombras aos elementos*/
+
+    transition: all linear 0.2s;
+
+}
+
+#retratos:hover{
+    transition: all linear 0.2s;
+    width: 350px;
+    height: 350px;
+
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .leaf-icon {
+  
+    margin-right: 8px; /* Espaço entre a imagem e o texto */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .leaf-icon:hover  {
+    animation: dance 0.5s infinite alternate;
+  }
+  
+  @keyframes dance {
+    0% {
+      transform: rotate(0deg) translateX(0);
+    }
+    25% {
+      transform: rotate(10deg) translateX(5px);
+    }
+    50% {
+      transform: rotate(0deg) translateX(0);
+    }
+    75% {
+      transform: rotate(-10deg) translateX(-5px);
+    }
+    100% {
+      transform: rotate(0deg) translateX(0);
+    }
+  }
